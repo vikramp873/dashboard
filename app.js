@@ -4,78 +4,24 @@ let searchBtn = document.querySelector(".bx-search");
 
 closeBtn.addEventListener("click", () => {
    sidebar.classList.toggle("open");
-   menuBtnChange(); //calling the function(optional)
+   menuBtnChange(); 
 });
 
 searchBtn.addEventListener("click", () => {
-   // Sidebar open when you click on the search iocn
+   
    sidebar.classList.toggle("open");
-   menuBtnChange(); //calling the function(optional)
+   menuBtnChange(); 
 });
 
-// following are the code to change sidebar button(optional)
+
 function menuBtnChange() {
    if (sidebar.classList.contains("open")) {
-      closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+      closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); 
    } else {
-      closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+      closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); 
    }
 }
 
-
-// Tutorial - https://youtu.be/VufN46OyFng
-
-// Targetting all classes & id from HTML
-
-// let id = (id) => document.getElementById(id);
-
-// let classes = (classes) => document.getElementsByClassName(classes);
-
-// let username = id("username"),
-//    email = id("email"),
-//    number = id("number"),
-//    date = id("date"),
-//    form = id("form"),
-//    gender = id("gender"),
-//    errorMsg = classes("error"),
-//    successIcon = classes("success-icon"),
-//    failureIcon = classes("failure-icon");
-
-// // Adding the submit event Listener
-
-// form.addEventListener("submit", (e) => {
-//    e.preventDefault();
-
-//    engine(username, 0, "Username cannot be blank");
-//    engine(email, 1, "Email cannot be blank");
-//    engine(number, 2, "Number cannot be blank");
-//    engine(date, 3, "date cannot be blank");
-//    engine(gender, 4, "date cannot be blank");
-// });
-
-// // engine function which will do all the works
-
-// let engine = (id, serial, message) => {
-//    if (id.value.trim() === "") {
-//       errorMsg[serial].innerHTML = message;
-//       id.style.border = "2px solid red";
-
-
-//       // icons
-//       failureIcon[serial].style.opacity = "1";
-//       successIcon[serial].style.opacity = "0";
-//    }
-//    else {
-//       errorMsg[serial].innerHTML = "";
-//       id.style.border = "2px solid green";
-
-
-//       // icons
-//       failureIcon[serial].style.opacity = "0";
-//       successIcon[serial].style.opacity = "1";
-
-//    }
-// };
 
 let firstName = document.querySelector("#username");
 let lastName = document.querySelector("#lastname");
@@ -132,10 +78,3 @@ submit.addEventListener('click', (e) => {
    }
 
 })
-
-function myFunction(e) {
-   if (document.querySelector('#navList a.active') !== null) {
-      document.querySelector('#navList a.active').classList.remove('active');
-   }
-   e.target.className = "active";
-}
