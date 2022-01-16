@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+  <link rel="stylesheet" href="style.css">
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+      <div class="logo_name"></div>
+      <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <i class='bx bx-search'></i>
+        <input type="text" placeholder="Search...">
+        <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+      <li>
+        <a href="new.html">
+          <i class='bx bx-folder'></i>
+          <span class="links_name">Users Details</span>
+        </a>
+        <span class="tooltip">Users Details</span>
+      </li>
+      <li class="profile">
+        <div class="profile-details">
+          <img src="img1.png" alt="profileImg">
+          <div class="name_job">
+            <div class="name">Anonymous</div>
+            <div class="job">Software Engineer</div>
+          </div>
+        </div>
+        <i class='bx bx-log-out' id="log_out"></i>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <nav class="navbar-1">
+      <!-- LOGO -->
+      <div class="main-logo">
+         <h3>
+         DASHBOARD
+      </h3>
+      </div>
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+          <li class="profile-top">
+            <div class="profile-details-top">
+               <img src="img1.png" alt="profileImg">
+             <a href="#">Anonymous <i class='bx bx-chevron-down'></i></a>
+             </div>
+            </li>
+        </div>
+      </ul>
+    </nav>
+
+    
+
+    <section class="section2">
+
+    <nav class="navbar-2">
+      <!-- LOGO -->
+      <div class="logo">
+         <h3>
+        Users Data  
+      </h3></div>
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+          <ul class="nav-list-top">
+            <li>
+              <!-- <i class='bx bx-search'></i> -->
+              <input type="text" placeholder="Search...">
+              <!-- <span class="tooltip">Search</span> -->
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </nav>
+    <section class="main-content">
+      <table>
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Office</th>
+          <th>Age</th>
+          <th>Salary</th>
+          <th>Start Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>James</td>
+          <td>Data Engineers</td>
+          <td>London</td>
+          <td>24</td>
+          <td>$123,456</td>
+          <td>12/09/2020</td>
+        </tr>
+        <tr>
+          <td>Matman</td>
+          <td>Database Administrator</td>
+          <td> Paris</td>
+          <td>30</td>
+          <td>$223,456</td>
+          <td>22/19/2018</td>
+        </tr>
+        <tr>
+          <td>Sandwich Eater</td>
+          <td>Data Scientist.</td>
+          <td>New York City</td>
+          <td>36</td>
+          <td>$323,556</td>
+          <td>2/1/2015</td>
+        </tr>
+        <tr>
+          <td>Johnson</td>
+          <td>Machine Learning Engineer</td>
+          <td>Moscow</td>
+          <td>46</td>
+          <td>$542,641</td>
+          <td>2/9/2000</td>
+        </tr>
+        <tr>
+          <td>Tim Bavuma</td>
+          <td>Business Analyst</td>
+          <td>Dubai</td>
+          <td>24</td>
+          <td>$333,156</td>
+          <td>3/3/2020</td>
+        </tr>
+        <tr>
+          <td>Nick Johnas</td>
+          <td>Statistician</td>
+          <td>Tokyo,</td>
+          <td>45</td>
+          <td>$513,585</td>
+          <td>Crimefighter Sorta</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+  </section>
+
+</body>
+<script src="app.js"></script>
+
+</html>
