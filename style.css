@@ -721,26 +721,10 @@ only screen and (max-width: 760px),
 	td:nth-of-type(6):before { content: "Start Date"; }
 	
 }
- /* Tutorial - https://youtu.be/VufN46OyFng */
  
- /* 
- 
- @media (max-width: 425px) {
-   form {
-     padding: 20px;
-   }
- }
- 
- 
- @media (max-width: 425px) {
-   form {
-     padding: 20px;
-   }
- }
- 
-
-@media (max-width: 420px) {
-  .sidebar li .tooltip {
-    display: none;
+@media screen and (max-width:425px) {
+  .navbar-1 {
+   flex-direction: column;
   }
 }
+
